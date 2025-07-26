@@ -97,14 +97,27 @@
       <p>Explore a perfect mix of edgy and elegant styles curated for all seasons and moods.</p>
       <a href="/custom.html" class="cta-button">Create Your Look</a>
     </section>
-     <script>
+     
+   <script>
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.querySelector('.nav-links');
+const dropdownParents = document.querySelectorAll('.nav-links li');
 
 menuToggle.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
+
+// Handle dropdown toggle in mobile view
+dropdownParents.forEach(li => {
+  li.addEventListener('click', (e) => {
+    if (li.querySelector('.dropdown')) {
+      e.preventDefault();
+      li.classList.toggle('show');
+    }
+  });
+});
 </script>
+     
   </main> 
    <footer>
     <p>&copy; 2025 Tomboy. All rights reserved.</p>
