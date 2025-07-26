@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Watches - Tomboy</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #1e1e1e, #2b2b2b);
+      color: #f5f5f5;
+    }
+
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 5%;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #f5f5f5;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffd700;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      background-color: #222;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .nav-links li:hover .dropdown {
+      display: block;
+    }
+
+    .dropdown li {
+      margin: 5px 0;
+    }
+
+    .container {
+      padding: 50px 5%;
+    }
+
+    .container h1 {
+      font-size: 34px;
+      text-align: center;
+      margin-bottom: 30px;
+      background: linear-gradient(to right, #ffdf00, #d4af37);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .grid-item {
+      background: #292929;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(255, 223, 0, 0.15);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .grid-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(255, 215, 0, 0.25);
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .grid-item .caption {
+      padding: 15px;
+      font-size: 14px;
+      text-align: center;
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Tomboy</div>
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/accessories/watch.html">Watches</a></li>
+      <li><a href="/custom.html">Custom</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Premium Watch Picks ⌚</h1>
+    <div class="grid">
+      <div class="grid-item">
+        <img src="/assets/watch1.jpg" alt="Watch 1">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/watch2.jpg" alt="Watch 2">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/watch3.jpg" alt="Watch 3">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/watch4.jpg" alt="Watch 4">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/watch5.jpg" alt="Watch 5">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/watch6.jpg" alt="Watch 6">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/watch7.jpg" alt="Watch 7">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/watch8.jpg" alt="Watch 8">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/watch9.jpg" alt="Watch 9">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/watch10.jpg" alt="Watch 10">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

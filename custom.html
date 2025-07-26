@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Look - Tomboy</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(to right, #ffe5ec, #e0f7fa);
+    }.custom-section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.custom-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #444;
+}
+
+.custom-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.custom-box {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #eee;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.custom-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.custom-box label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.custom-box select,
+.custom-box input[type="color"] {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.preview-btn {
+  display: block;
+  margin: auto;
+  padding: 1rem 2.5rem;
+  background: #ff5e78;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.preview-btn:hover {
+  background: #e64161;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1rem;
+  background: #222;
+  color: white;
+  border-radius: 0 0 1rem 1rem;
+}
+
+  </style>
+</head>
+
+<body>
+  
+  <section class="custom-section">
+    <h2>✨ Customize Your Own Look ✨</h2>
+    <div class="custom-options">
+      <div class="custom-box">
+        <label for="season">Select Season</label>
+        <select id="season">
+          <option value="summer">Summer</option>
+          <option value="winter">Winter</option>
+          <option value="spring">Spring</option>
+          <option value="autumn">Autumn</option>
+        </select>
+      </div><div class="custom-box">
+    <label for="accessory">Select Accessory</label>
+    <select id="accessory">
+      <option value="ring">Ring</option>
+      <option value="watch">Watch</option>
+      <option value="earrings">Earrings</option>
+      <option value="necklace">Necklace</option>
+    </select>
+  </div>
+
+  <div class="custom-box">
+    <label for="color">Choose a Color</label>
+    <input type="color" id="color" value="#ff69b4">
+  </div>
+</div>
+
+<button class="preview-btn" onclick="alert('Previewing your custom style!')">Preview Look</button>
+
+  </section>  <footer>
+    <p>&copy; 2025 Tomboy. All rights reserved.</p>
+  </footer>
+</body>
+</html>

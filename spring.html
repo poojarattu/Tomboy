@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spring Collection - Tomboy</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #fefbd8, #f8e1f4);
+      color: #4e342e;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #ffb74d;
+}
+    
+    .gallery-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #8e44ad;
+  text-shadow: 1px 1px 3px #f48fb1;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.image-card {
+  background: #fff0f6;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+}
+
+.image-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.image-card p {
+  margin-top: 0.7rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ab47bc;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f8e1f4;
+  color: #6a1b9a;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Tomboy</div>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/clothes/spring.html" class="active">Spring</a></li>
+        <li><a href="/custom.html">Custom</a></li>
+      </ul>
+    </nav>
+  </header>  <section class="gallery-container">
+    <h2 class="gallery-title">Spring Clothing Collection</h2>
+    <div class="image-grid">
+      <div class="image-card">
+        <img src="/assets/spr1.jpg" alt="Spring 1">
+      </div>
+      <div class="image-card">
+        <img src="/assets/spr2.jpg" alt="Spring 2">
+      </div>
+      <div class="image-card">
+        <img src="/assets/spr3.jpg" alt="Spring 3">
+      </div>
+      <div class="image-card">
+        <img src="/assets/spr4.jpg" alt="Spring 4">
+      </div>
+      <div class="image-card">
+        <img src="/assets/spr5.jpg" alt="Spring 5">
+      </div>
+      <div class="image-card">
+        <img src="/assets/spr6.jpg" alt="Spring 6">
+      </div>
+      <div class="image-card">
+        <img src="/assets/spr7.jpg" alt="Spring 7">
+      </div>
+      <div class="image-card">
+        <img src="/assets/spr8.jpg" alt="Spring 8">
+      </div>
+      <div class="image-card">
+        <img src="/assets/spr9.jpg" alt="Spring 9">
+      </div>
+      <div class="image-card">
+        <img src="/assets/spr10.jpg" alt="Spring 10">
+      </div>
+    </div>
+  </section>  <footer>
+    <p>&copy; 2025 Tomboy. All rights reserved.</p>
+  </footer>
+</body>
+</html>

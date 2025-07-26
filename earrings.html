@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Earrings - Tomboy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fef6f9, #e8eaf6);
+      color: #444;
+    }
+
+    nav {
+      background-color: #e0aeb5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 5%;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffe1eb;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #e0aeb5;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .nav-links li:hover .dropdown {
+      display: block;
+    }
+
+    .dropdown li {
+      margin-bottom: 10px;
+    }
+
+    .dropdown li:last-child {
+      margin-bottom: 0;
+    }
+
+    .container {
+      padding: 50px 5%;
+    }
+
+    .container h1 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #b45f74;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+
+    .grid img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Tomboy</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+       <li><a href="earrings.html">Earrings</a></li>
+       <li><a href="../custom.html">Custom</a></li>
+      
+    </ul> 
+        
+  </nav>
+
+  <div class="container">
+    <h1>Elegant Earrings Collection</h1>
+    <div class="grid">
+      <img src="/assets/ear1.jpg" alt="Earrings 1">
+      <img src="/assets/ear2.jpg" alt="Earrings 2">
+      <img src="/assets/ear3.jpg" alt="Earrings 3">
+      <img src="/assets/ear4.jpg" alt="Earrings 4">
+      <img src="/assets/ear5.jpg" alt="Earrings 5">
+      <img src="/assets/ear6.jpg" alt="Earrings 6">
+      <img src="/assets/ear7.jpg" alt="Earrings 7">
+      <img src="/assets/ear8.jpg" alt="Earrings 8">
+      <img src="/assets/ear9.jpg" alt="Earrings 9">
+      <img src="/assets/ear10.jpg" alt="Earrings 10">
+    </div>
+  </div>
+</body>
+</html>

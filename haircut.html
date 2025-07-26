@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Haircut Styles - Tomboy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e8eaf6, #fce4ec);
+      color: #333;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 5%;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ff4081;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      background-color: #444;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    .nav-links li:hover .dropdown {
+      display: block;
+    }
+
+    .dropdown li {
+      margin: 5px 0;
+    }
+
+    .container {
+      padding: 50px 5%;
+    }
+
+    .container h1 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #d81b60;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .grid-item {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .grid-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .grid-item .caption {
+      padding: 15px;
+      font-size: 14px;
+      text-align: center;
+      color: #555;
+      background-color: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Tomboy</div>
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/accessories/haircut.html">Haircutes</a></li>
+      <li><a href="/custom.html">Custom</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Haircut Styles</h1>
+    <div class="grid">
+      <div class="grid-item">
+        <img src="/assets/hair1.jpg" alt="Style 1">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/hair2.jpg" alt="Style 1">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/hair3.jpg" alt="Style 2">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/hair4.jpg" alt="Style 3">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/hair5.jpg" alt="Style 4">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/hair6.jpg" alt="Style 5">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/hair7.jpg" alt="Style 6">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/hair8.jpg" alt="Style 7">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/hair9.jpg" alt="Style 8">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/hair10.jpg" alt="Style 9">
+      </div>
+      
+
+    </div>
+  </div>
+</body>
+</html>

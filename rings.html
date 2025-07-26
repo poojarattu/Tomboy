@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rings - Tomboy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #fef6f9, #fff0f5, #fdfdfd);
+      color: #2a2a2a;
+    }
+
+    nav {
+      background-color: #3b1f2b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 5%;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffcad4;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      background-color: #5b2a3d;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    .nav-links li:hover .dropdown {
+      display: block;
+    }
+
+    .dropdown li {
+      margin: 5px 0;
+    }
+
+    .container {
+      padding: 50px 5%;
+    }
+
+    .container h1 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 30px;
+      background: linear-gradient(to right, #d86f7b, #ffb6c1);
+      color: transparent;
+      -webkit-background-clip: text;
+      font-weight: 800;
+      text-shadow: 1px 1px 2px #f5e0e9;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .grid-item {
+      background: #ffffffd0;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(255, 182, 193, 0.3);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .grid-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 24px rgba(255, 160, 176, 0.5);
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .grid-item .caption {
+      padding: 15px;
+      font-size: 14px;
+      text-align: center;
+      background-color: #fff6fa;
+      color: #3d3d3d;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Tomboy</div>
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/accessories/rings.html">Rings</a></li>
+      <li><a href="/custom.html">Custom</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Elegant Ring Designs 💍</h1>
+    <div class="grid">
+      <div class="grid-item">
+        <img src="/assets/ring1.jpg" alt="Ring 1">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/ring2.jpg" alt="Ring 2">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/ring3.jpg" alt="Ring 3">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/ring4.jpg" alt="Ring 4">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/ring5.jpg" alt="Ring 5">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/ring6.jpg" alt="Ring 6">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/ring7.jpg" alt="Ring 7">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/ring8.jpg" alt="Ring 8">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/ring9.jpg" alt="Ring 9">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/ring10.jpg" alt="Ring 10">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

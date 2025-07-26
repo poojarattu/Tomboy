@@ -1,0 +1,11 @@
+/* Theme 1 - Soft Rose Gold */ .theme-1 { --bg-color: #fff5f8; --text-color: #4b2e2e; --nav-bg: #ffe3ec; --nav-text: #5c3a3a; --nav-hover: #ffcad4; --button-bg: #e29587; --button-text: #fff; --input-bg: #ffffff; --input-text: #4b2e2e; }
+
+/* Theme 2 - Modern Blue & Mint */ .theme-2 { --bg-color: #e8f7ff; --text-color: #003344; --nav-bg: #d0f0f7; --nav-text: #003344; --nav-hover: #b8eaf1; --button-bg: #00bcd4; --button-text: #ffffff; --input-bg: #ffffff; --input-text: #003344; }
+
+/* Theme 3 - Elegant Dark */ .theme-3 { --bg-color: #111; --text-color: #f5f5f5; --nav-bg: #222; --nav-text: #eee; --nav-hover: #444; --button-bg: #444; --button-text: #fff; --input-bg: #333; --input-text: #eee; }
+
+/* Theme 4 - Retro Vibes */ .theme-4 { --bg-color: #fdf6e3; --text-color: #073642; --nav-bg: #eee8d5; --nav-text: #657b83; --nav-hover: #ddd6c1; --button-bg: #b58900; --button-text: #fff; --input-bg: #fff3d1; --input-text: #073642; }
+
+/* Theme 5 - Neon Pop */ .theme-5 { --bg-color: #1e1e2f; --text-color: #ffffff; --nav-bg: #2a2a3d; --nav-text: #ff6bcb; --nav-hover: #3c3c54; --button-bg: #ff6bcb; --button-text: #1e1e2f; --input-bg: #2a2a3d; --input-text: #ffffff; }
+
+/* Theme 6 - Ocean Breeze */ .theme-6 { --bg-color: #e0f7fa; --text-color: #004d40; --nav-bg: #b2ebf2; --nav-text: #00695c; --nav-hover: #80deea; --button-bg: #0097a7; --button-text: #ffffff; --input-bg: #ffffff; --input-text: #004d40; }

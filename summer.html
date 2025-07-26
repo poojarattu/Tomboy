@@ -1,0 +1,156 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer Collection - Tomboy</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffe259, #ffa751);
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+    }.gallery-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px #00000060;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.image-card {
+  background: #fff5cc;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(255, 179, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(255, 128, 0, 0.5);
+}
+
+.image-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #ffcc70;
+}
+
+.image-card p {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-weight: bold;
+  color: #ff6700;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(255, 150, 0, 0.3);
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #ff8c00;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Tomboy</div>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/clothes/summer.html" class="active">Summer</a></li>
+        <li><a href="/custom.html">Custom</a></li>
+      </ul>
+    </nav>
+  </header>  <section class="gallery-container">
+    <h2 class="gallery-title">☀ Summer Clothing Collection</h2>
+    <div class="image-grid">
+      <div class="image-card">
+        <img src="/assets/sum1.jpg" alt="Summer 1">
+      </div>
+      <div class="image-card">
+        <img src="/assets/sum2.jpg" alt="Summer 2">
+      </div>
+      <div class="image-card">
+        <img src="/assets/sum3.jpg" alt="Summer 3">
+      </div>
+      <div class="image-card">
+        <img src="/assets/sum4.jpg" alt="Summer 4">
+      </div>
+      <div class="image-card">
+        <img src="/assets/sum5.jpg" alt="Summer 5">
+      </div>
+      <div class="image-card">
+        <img src="/assets/sum6.jpg" alt="Summer 6">
+      </div>
+      <div class="image-card">
+        <img src="/assets/sum7.jpg" alt="Summer 7">
+      </div>
+      <div class="image-card">
+        <img src="/assets/sum8.jpg" alt="Summer 8">
+      </div>
+      <div class="image-card">
+        <img src="/assets/sum9.jpg" alt="Summer 9">
+      </div>
+      <div class="image-card">
+        <img src="/assets/sum10.jpg" alt="Summer 10">
+      </div>
+    </div>
+  </section>  <footer>
+    <p>&copy; 2025 Tomboy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
