@@ -10,36 +10,39 @@
   <header>
     <nav class="navbar">
       <div class="logo">Tomboy</div>
-     
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
-        <li class="dropdown">
-          <a href="#">Clothes</a>
-          <ul class="dropdown-content">
-            <li><a href="summer.html">Summer</a></li>
-            <li><a href="winter.html">Winter</a></li>
-            <li><a href="spring.html">Spring</a></li>
-            <li><a href="autumn.html">Autumn</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#">Accessories</a>
-          <ul class="dropdown-content">
-            <li><a href="rings.html">Rings</a></li>
-            <li><a href="necklaces.html">Necklaces</a></li>
-            <li><a href="earrings.html">Earrings</a></li>
-            <li><a href="watch.html">Watches</a></li>
-            <li><a href="haircut.html">Haircuts</a></li>
-            <li><a href="Footwears.html">Footwears</a></li>
-            <li><a href="braclets.html">Bracelets</a></li>
-          </ul>
-        </li>
-        <li><a href="custom.html">Custom</a></li>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="signup.html">Sign Up</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+
+    <li>
+      <a href="summer.html" class="toggle-dropdown">Clothes</a>
+      <ul class="dropdown">
+        <li><a href="summer.html">Summer</a></li>
+        <li><a href="winter.html">Winter</a></li>
+        <li><a href="spring.html">Spring</a></li>
+        <li><a href="autumn.html">Autumn</a></li>
       </ul>
+    </li>
+
+    <li>
+      <a href="rings.html" class="toggle-dropdown">Accessories</a>
+      <ul class="dropdown">
+        <li><a href="rings.html">Rings</a></li>
+        <li><a href="necklace.html">Necklace</a></li>
+        <li><a href="earrings.html">Earrings</a></li>
+        <li><a href="watch.html">Watch</a></li>
+        <li><a href="footwears.html">Footwears</a></li>
+        <li><a href="haircut.html">Haircut</a></li>
+        <li><a href="bracelets.html">Bracelets</a></li>
+      </ul>
+    </li>
+
+    <li><a href="custom.html">Custom</a></li>
+  </ul>
       <select id="themeSwitcher">
         <option value="theme-1">Theme 1</option>
         <option value="theme-2">Theme 2</option>
@@ -95,6 +98,24 @@
       <p>Explore a perfect mix of edgy and elegant styles curated for all seasons and moods.</p>
       <a href="/custom.html" class="cta-button">Create Your Look</a>
     </section>
+
+    <script>
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+const dropdownToggles = document.querySelectorAll('.toggle-dropdown');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+dropdownToggles.forEach(toggle => {
+  toggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    const parent = toggle.parentElement;
+    parent.classList.toggle('show');
+  });
+});
+</script>
      
   </main> 
    <footer>
