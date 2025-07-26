@@ -348,3 +348,53 @@ footer {
     background: #222;
   }
 }
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    position: relative;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    color: #fff;
+    text-align: left;
+  }
+
+  /* Dropdown styles for mobile */
+  .dropdown {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    padding-left: 15px;
+    margin-top: 5px;
+  }
+
+  .nav-links li.show .dropdown {
+    display: flex;
+  }
+
+  /* Add small arrow indicator for dropdown */
+  .nav-links li a.toggle-dropdown::after {
+    content: " ▼";
+    float: right;
+    font-size: 12px;
+  }
+}
